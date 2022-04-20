@@ -1,0 +1,39 @@
+[
+  {
+    "path": "/",
+    "component": "LayoutAdmin",
+    "redirect": "/dashboard",
+    "meta": {
+      "group": false,
+      "title": "Dashboard",
+      "icon": "fa fa-dashboard"
+    },
+    "children": [
+      {
+        "path": "/dashboard",
+        "component": "dashboard/index.vue",
+        "meta": {
+          "title": "Dashboard"
+        }
+      }
+    ]
+  },
+  {
+    "path": "/",
+    "component": "LayoutAdmin",
+    "meta": {
+      "group": true,
+      "title": "Components",
+      "icon": "fa fa-cubes"
+    },
+    "children": [
+      {
+        "path": "/components/develop",
+        "component": "develop/index.vue",
+        "meta": {
+          "title": "Develop"
+        }
+      }
+    ]
+  }
+]
